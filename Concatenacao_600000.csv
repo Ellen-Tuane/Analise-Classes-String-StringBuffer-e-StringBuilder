@@ -1,0 +1,4 @@
+concat_qdt, String_tipo, tempo, letras_qtd
+600000,String,34842,1
+600000,StringBuilder,42,1
+600000,StringBuffer,42,1

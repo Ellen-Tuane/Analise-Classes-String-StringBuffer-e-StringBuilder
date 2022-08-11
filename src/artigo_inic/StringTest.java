@@ -1,8 +1,6 @@
 package artigo_inic;
 
-import java.io.File;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -23,12 +21,11 @@ public class StringTest {
         
         return name;
     }
-
-	
 	
 	public static void main(String[] args) {
-		int letras_qtd = 1;
-		int concat_qdt = 1000000;
+		int letras_qtd = 2;
+		int concat_qdt = 100000;
+		String csv = "Concatenacao_100000_2.csv";
 		
 		String strFinal = "";
         
@@ -42,9 +39,12 @@ public class StringTest {
         long tEnd = System.currentTimeMillis();
         long tResult = tEnd - tStart;
         
-        Concatenacao string_normal = new Concatenacao(100000, "String", tResult, letras_qtd);
+        strFinal = "";
+        
+        Concatenacao string_normal = new Concatenacao(concat_qdt, "String", tResult, letras_qtd);
 
-        System.out.println("Concatenação de 100.000 \"a\" com String - Tempo de Execução = "+tResult+" ms");
+        ///System.out.println("Concatenação de 100.000 \"a\" com String - Tempo de Execução = "+tResult+" ms");
+        System.out.println(strFinal.length());        
         
         
         StringBuilder strBuilder = new StringBuilder();
@@ -58,9 +58,14 @@ public class StringTest {
         tEnd = System.currentTimeMillis();
         tResult = tEnd - tStart;
         
-        Concatenacao string_builder = new Concatenacao(100000, "StringBuilder", tResult, letras_qtd);
+        strBuilder.delete(0, concat_qdt);
         
-        System.out.println("Concatenação de 100.000 \"a\" com StringBuilder - Tempo de Execução = "+tResult+" ms");
+        Concatenacao string_builder = new Concatenacao(concat_qdt, "StringBuilder", tResult, letras_qtd);
+        
+        ///System.out.println("Concatenação de 100.000 \"a\" com StringBuilder - Tempo de Execução = "+tResult+" ms");
+        System.out.println(strBuilder.length()); 
+        
+        
         
         StringBuffer strBuffer = new StringBuffer();
         tStart = System.currentTimeMillis();
@@ -70,10 +75,12 @@ public class StringTest {
         }
         tEnd = System.currentTimeMillis();
         tResult = tEnd - tStart;
+        strBuffer.delete(0, concat_qdt);
+        Concatenacao string_buffer = new Concatenacao(concat_qdt, "StringBuffer", tResult, letras_qtd);
         
-        Concatenacao string_buffer = new Concatenacao(100000, "StringBuffer", tResult, letras_qtd);
+        ///System.out.println("Concatenação de 100.000 \"a\" com StringBuffer - Tempo de Execução  = "+tResult+" ms");
+        System.out.println(strBuilder.length());
         
-        System.out.println("Concatenação de 100.000 \"a\" com StringBuffer - Tempo de Execução  = "+tResult+" ms");
         
         List<Concatenacao> conc_list = new ArrayList<Concatenacao>();
         conc_list.add(string_normal);
@@ -84,7 +91,7 @@ public class StringTest {
         
         try
         {
-          file = new FileWriter("Concatenacao.csv");
+          file = new FileWriter(csv);
           //Add header
           file.append(HEADER);
           //Add a new line after the header
@@ -110,6 +117,7 @@ public class StringTest {
         {
           e.printStackTrace();
         }
+        System.out.println("************FIM************");
   }
         
 
