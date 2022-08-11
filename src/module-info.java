@@ -1,0 +1,2 @@
+module artigo_inic {
+}
