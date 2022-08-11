@@ -29,8 +29,8 @@ public class StringTest {
     }
 	
 	public static void main(String[] args) {
-		int letras_qtd = 2;
-		int concat_qdt = 300000;
+		int letras_qtd = 3;
+		int concat_qdt = 1000000;
 		String csv = "Concatenacao.csv";
 		String randomWord = "aa";
 		
