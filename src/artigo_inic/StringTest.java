@@ -29,10 +29,10 @@ public class StringTest {
     }
 	
 	public static void main(String[] args) {
-		int letras_qtd = 3;
+		int letras_qtd = 4;
 		int concat_qdt = 1000000;
 		String csv = "Concatenacao.csv";
-		String randomWord = "aa";
+		String randomWord = "aaaa";
 		
 		String strFinal = "";
         
