@@ -5,6 +5,9 @@
 ![newplot(3)](https://user-images.githubusercontent.com/75332447/184414638-fed6c356-ebe8-4808-aa5a-ab002c97c988.png)
 
 UNIVAP - Universidade do Vale do Paraíba
+
 Engenharia da Computação
+
 Alunas: Amanda Evangelista e Ellen Tuane
+
 Prof. Wagner dos Santos C. de Jesus 
