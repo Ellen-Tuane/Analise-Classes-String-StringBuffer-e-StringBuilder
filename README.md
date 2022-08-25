@@ -10,14 +10,14 @@ Resultados
 <p align="justify">As figuras  logo abaixo, mostram a disposição do tempo de execução para as concentrações de 100.000 a 1.000.000 vezes, para strings de 1, 2, 3 e 4 bytes. Ao final das concatenações, as variáveis strings atingiram o tamanho de 1, 2, 3 e 4 megabyte respectivamente.</p>
 
 Figura 2
-![newplot(5)](https://user-images.githubusercontent.com/75332447/186675536-b73ef919-8725-44c3-8acc-d90e91a94b43.png)
+<h1 align="center">![newplot(5)](https://user-images.githubusercontent.com/75332447/186675536-b73ef919-8725-44c3-8acc-d90e91a94b43.png)</h1>
 
 Figura 3
-![newplot(7)](https://user-images.githubusercontent.com/75332447/186675425-56dfdcd9-b770-487c-a269-c979e5487413.png)
+<h1 align="center">![newplot(7)](https://user-images.githubusercontent.com/75332447/186675425-56dfdcd9-b770-487c-a269-c979e5487413.png)</h1>
 
 <p align="justify">Na tabela 1 são dispostas medidas estatísticas que representam cada classe. Importante ressaltar que os dados da classe String são apresentados na escala de minutos, enquanto que os dados das outras duas classes em milissegundos. Partindo disso, é possível então apontar a principal diferença entre os resultados, a classe String tem mediana de 1.37 minutos, as classes StringBuffer e StringBuilder apresentam mediana de 12.5 milissegundos. Embora a média, mediana e desvio padrão das classes StringBuffer e StringBuilder apresentam resultados próximos, há uma diferença de 4.94 milissegundos na variância  entre ambos.</p>
 
-![tabela](https://user-images.githubusercontent.com/75332447/186676900-903ab917-e2aa-4540-9300-8d33506e67c2.png)
+<h1 align="center">![tabela](https://user-images.githubusercontent.com/75332447/186676900-903ab917-e2aa-4540-9300-8d33506e67c2.png)</h1>
 
 Conclusão
 
